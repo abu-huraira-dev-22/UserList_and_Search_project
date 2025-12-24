@@ -17,3 +17,19 @@ const arr = [
         email: 'lelouch@britannia.com'
     },
 ]
+
+arr.map(function(obj){
+    let elem = document.createElement('div')
+    elem.className = 'userItem'
+    elem.innerHTML = `
+           <div class="image">
+                    <img src="https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQQWSYe1mX-RUjCpTUxaKNTaMpgtgINKyBiiLuLQ5yZKJ3dO5zbOtbHnQbhn4TNxjG8KGOnE77krtUCewKC4s0cxZ6viSCseq9mYyJZzIWgWzHvqAY_Zo07ExfjSfTDtZlQWkgj1oZbjL1UOX_IE09Y3ApvY.jpg?r=d1b" alt="Error loading image...">
+                </div>
+                <div class="userDetails">
+                    <h3>Thomas Shelby</h3>
+                    <p>thomas@shelby.com</p>
+                </div>
+            </div>
+    `
+
+})
